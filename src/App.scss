@@ -1,0 +1,119 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.App {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+:root {
+  font-size: 15px;
+  --color-bg: white;
+  --color-text: black;
+  --theme-color-1: #141414;
+  --theme-color-2: #3b3b3b;
+  --font-normal: proxima-nova, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-family: var(--font-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.container {
+  margin: 0 auto;
+  width: 800px;
+}
+.header {
+  width: 100%;
+  &__logo {
+    height: 3rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+  }
+
+  &__contact-button {
+    background: transparent;
+    border-radius: 7px;
+    border: 2px solid var(--theme-color-1);
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--theme-color-1);
+    text-decoration: none;
+    &:hover {
+      background: var(--theme-color-1);
+      color: white;
+    }
+  }
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  &__message {
+    text-align: center;
+    font-size: 5.6rem;
+    margin: 0;
+  }
+  &__copy {
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--theme-color-2);
+  }
+  &__cta-wrapper {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  &__cta {
+    margin: 0 auto;
+    background: var(--theme-color-1);
+    color: white;
+    border-radius: 7px;
+    border: 2px solid var(--theme-color-1);
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    &:hover {
+      background: transparent;
+      color: var(--theme-color-1);
+    }
+  }
+}
+
+.about-product {
+  width: 100%;
+  background-color: #eceff5;
+  padding: 2rem;
+  &__heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+  &__copy {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--theme-color-2);
+  }
+}
