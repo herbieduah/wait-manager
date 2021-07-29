@@ -11,6 +11,7 @@
 }
 :root {
   font-size: 15px;
+  width: 100%;
   --color-bg: white;
   --color-text: black;
   --theme-color-1: #141414;
@@ -107,7 +108,7 @@ body {
   padding: 2rem;
   &__heading {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 400;
     margin-bottom: 2rem;
   }
@@ -115,5 +116,64 @@ body {
     font-size: 1rem;
     text-align: center;
     color: var(--theme-color-2);
+  }
+  &__info-boxes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+  &__info-box {
+    width: 30%;
+    background-color: white;
+    position: relative;
+    margin: 1%;
+    &::after {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
+  }
+
+  &__info-box-container {
+    position: absolute;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__info-box-copy {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+
+.contact {
+  text-align: center;
+  span {
+    display: block;
+  }
+  &__header {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+
+  &__container {
+    margin: 2rem 0;
+    font-size: 1.4rem;
+  }
+  &__type {
+    text-transform: uppercase;
+    font-weight: 600;
   }
 }
