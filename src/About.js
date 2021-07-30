@@ -1,5 +1,9 @@
 import "./App.scss";
 import businessDecisions from "./assets/Business_decisions.svg";
+import airport from "./assets/airport.svg";
+import appointment from "./assets/appt.svg";
+import mobileUser from "./assets/mobile_user.svg";
+import noTime from "./assets/no_time.svg";
 function About() {
   return (
     <section className="about-product">
@@ -26,41 +30,45 @@ function About() {
           <div className="about-product__info-box">
             <div className="about-product__info-box-container">
               <img
-                src={businessDecisions}
+                src={airport}
                 className="about-product__info-box-img"
                 alt="drawing of a guy making business decisions"
               />
-              <p className="about-product__info-box-copy">Search and select your desired business.</p>
+              <p className="about-product__info-box-copy">
+                Assess waiting time and get in line with estimated arrival.
+              </p>
             </div>
           </div>
           <div className="about-product__info-box">
             <div className="about-product__info-box-container">
               <img
-                src={businessDecisions}
+                src={mobileUser}
                 className="about-product__info-box-img"
                 alt="drawing of a guy making business decisions"
               />
-              <p className="about-product__info-box-copy">Search and select your desired business.</p>
+              <p className="about-product__info-box-copy">
+                Get notified via mobile phone when your turn is approaching.
+              </p>
             </div>
           </div>
           <div className="about-product__info-box">
             <div className="about-product__info-box-container">
               <img
-                src={businessDecisions}
+                src={noTime}
                 className="about-product__info-box-img"
                 alt="drawing of a guy making business decisions"
               />
-              <p className="about-product__info-box-copy">Search and select your desired business.</p>
+              <p className="about-product__info-box-copy">Arrive at estimated time.</p>
             </div>
           </div>
           <div className="about-product__info-box">
             <div className="about-product__info-box-container">
               <img
-                src={businessDecisions}
+                src={appointment}
                 className="about-product__info-box-img"
                 alt="drawing of a guy making business decisions"
               />
-              <p className="about-product__info-box-copy">Search and select your desired business.</p>
+              <p className="about-product__info-box-copy">Complete your appointment in less time than normal.</p>
             </div>
           </div>
         </div>

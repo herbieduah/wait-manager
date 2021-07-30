@@ -38,6 +38,11 @@ body {
 .container {
   margin: 0 auto;
   width: 800px;
+  @media screen and (max-width: 700px) {
+    padding: 1.3rem;
+    width: 100%;
+    margin: 0;
+  }
 }
 .header {
   width: 100%;
@@ -50,6 +55,9 @@ body {
     width: 100%;
     justify-content: space-between;
     padding: 2rem 4rem;
+    @media screen and (max-width: 500px) {
+      padding: 1.3rem;
+    }
   }
 
   &__contact-button {
@@ -75,11 +83,17 @@ body {
     text-align: center;
     font-size: 5.6rem;
     margin: 0;
+    @media screen and (max-width: 500px) {
+      font-size: 2.6rem;
+    }
   }
   &__copy {
     text-align: center;
     font-size: 1.3rem;
     color: var(--theme-color-2);
+    @media screen and (max-width: 500px) {
+      font-size: 1.1rem;
+    }
   }
   &__cta-wrapper {
     text-align: center;
@@ -106,6 +120,9 @@ body {
   width: 100%;
   background-color: #eceff5;
   padding: 2rem;
+  @media screen and (max-width: 500px) {
+    padding: 0;
+  }
   &__heading {
     text-align: center;
     font-size: 2.2rem;
@@ -130,6 +147,10 @@ body {
     background-color: white;
     position: relative;
     margin: 1%;
+    @media screen and (max-width: 500px) {
+      width: 100%;
+      margin: 1.1rem 0;
+    }
     &::after {
       content: "";
       display: block;
@@ -139,26 +160,31 @@ body {
 
   &__info-box-container {
     position: absolute;
-    padding: 1rem;
+    padding: 0.8rem;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
 
     img {
       width: 100%;
+      margin-bottom: auto;
     }
   }
 
   &__info-box-copy {
     font-size: 1rem;
     font-weight: 600;
+    padding: 0;
+    margin: 0;
+    height: 3rem;
   }
 }
 
 .contact {
   text-align: center;
+  padding-bottom: 3rem;
   span {
     display: block;
   }
@@ -170,7 +196,7 @@ body {
 
   &__container {
     margin: 2rem 0;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   &__type {
     text-transform: uppercase;
