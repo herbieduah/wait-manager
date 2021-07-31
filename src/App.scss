@@ -9,6 +9,62 @@
   height: 100%;
   width: 100%;
 }
+
+.hide {
+  opacity: 0;
+}
+
+.fade-in {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 :root {
   font-size: 15px;
   width: 100%;
@@ -56,7 +112,7 @@ body {
     justify-content: space-between;
     padding: 2rem 4rem;
     @media screen and (max-width: 500px) {
-      padding: 1.3rem;
+      padding: 1rem;
     }
   }
 
@@ -79,6 +135,13 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  span {
+    margin: 0;
+    padding: 0;
+  }
+  img {
+    width: 100%;
+  }
   &__message {
     text-align: center;
     font-size: 5.6rem;
@@ -93,6 +156,7 @@ body {
     color: var(--theme-color-2);
     @media screen and (max-width: 500px) {
       font-size: 1.1rem;
+      margin-top: 0;
     }
   }
   &__cta-wrapper {
