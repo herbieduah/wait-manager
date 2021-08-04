@@ -266,4 +266,8 @@ body {
     text-transform: uppercase;
     font-weight: 600;
   }
+  &__copyright {
+    display: inline-block;
+    margin-top: 2rem;
+  }
 }

@@ -1,4 +1,4 @@
-import heroImage from "./heromain.png";
+import heroImage from "./assets/waitManagerHero.svg";
 import { motion } from "framer-motion";
 import AnimatedCharacters from "./AnimatedCharacters.jsx";
 import "./App.scss";
