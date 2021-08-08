@@ -8,7 +8,9 @@ function About() {
   return (
     <section className="about-product">
       <div className="container">
-        <p className="about-product__heading">What can Wait Manager do for you?</p>
+        <p className="about-product__heading" id="about">
+          What can Wait Manager do for you?
+        </p>
 
         <p className="about-product__copy">
           Wait Manager will allow your business to fuel growth revenue, improve customer satisfaction, lower cost to

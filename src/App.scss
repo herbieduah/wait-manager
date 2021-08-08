@@ -15,56 +15,20 @@
 }
 
 .fade-in {
-  animation: fadeIn ease 2s;
-  -webkit-animation: fadeIn ease 2s;
-  -moz-animation: fadeIn ease 2s;
-  -o-animation: fadeIn ease 2s;
-  -ms-animation: fadeIn ease 2s;
+  animation: fadeInUp ease-in-out 1.5s;
 }
-@keyframes fadeIn {
-  0% {
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 2.5rem, 0);
     opacity: 0;
   }
-  100% {
+
+  to {
+    transform: translate3d(0, 0, 0);
     opacity: 1;
   }
 }
 
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 :root {
   font-size: 15px;
   width: 100%;
@@ -87,9 +51,8 @@ body {
   height: 100vh;
   overflow-x: hidden;
 }
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  cursor: pointer;
 }
 .container {
   margin: 0 auto;
@@ -125,6 +88,7 @@ body {
     font-weight: 600;
     color: var(--theme-color-1);
     text-decoration: none;
+    transition: all ease-in-out 0.5s;
     &:hover {
       background: var(--theme-color-1);
       color: white;
@@ -173,6 +137,7 @@ body {
     font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
+    transition: all ease-in-out 0.5s;
     &:hover {
       background: transparent;
       color: var(--theme-color-1);

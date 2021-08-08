@@ -2,6 +2,7 @@ import heroImage from "./assets/waitManagerHero.svg";
 import { motion } from "framer-motion";
 import AnimatedCharacters from "./AnimatedCharacters.jsx";
 import "./App.scss";
+import { Link } from "react-scroll";
 
 function Hero({ initialAnimClass }) {
   const headingText1 = "Lower wait times.";
@@ -35,9 +36,12 @@ function Hero({ initialAnimClass }) {
           allows businesses to improve operations, customer experience, and workforce management.
         </p>
         <div className="hero__cta-wrapper">
-          <a className="hero__cta" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
+          {/* <a  href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
             Learn More
-          </a>
+          </a> */}
+          <Link className="hero__cta" to="about" spy={true} smooth={true}>
+            Learn More
+          </Link>
         </div>
         <img src={heroImage} className="hero__img" alt="people waiting" />
       </div>
