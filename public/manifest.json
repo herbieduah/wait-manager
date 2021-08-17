@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Wait Manager",
+  "name": "Wait Manager - Reduce Waitimes",
   "icons": [
     {
       "src": "favicon.ico",
