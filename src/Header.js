@@ -6,13 +6,19 @@ function Header() {
     <header className="header">
       <div className="header__wrapper">
         <img src={logo} className="header__logo" alt="logo" />
-        <a
-          className="header__contact-button"
-          href="mailto:vuks.amonju@cvatechventure.com"
-          target="_blank"
-          rel="noopener noreferrer">
-          Contact Us
-        </a>
+        <div className="header__title-wrapper">
+          <span className="header__title">Waitmanager</span>
+          <span className="header__subtitle">Subsidiary of CVA Tech Ventures</span>
+        </div>
+        <div>
+          <a
+            className="header__contact-button"
+            href="mailto:vuks.amonju@cvatechventure.com"
+            target="_blank"
+            rel="noopener noreferrer">
+            Contact Us
+          </a>
+        </div>
       </div>
     </header>
   );
