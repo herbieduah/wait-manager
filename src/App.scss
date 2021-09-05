@@ -79,6 +79,26 @@ a {
       padding: 1rem;
     }
   }
+  &__title-wrapper {
+    &--mobile {
+      display: none;
+      @media screen and (max-width: 500px) {
+        display: block;
+        width: 100%;
+        span {
+          text-align: center;
+        }
+      }
+    }
+    &--desktop {
+      display: block;
+
+      justify-content: center;
+      @media screen and (max-width: 500px) {
+        display: none;
+      }
+    }
+  }
 
   &__title {
     display: block;

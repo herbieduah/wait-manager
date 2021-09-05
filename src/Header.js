@@ -6,7 +6,7 @@ function Header() {
     <header className="header">
       <div className="header__wrapper">
         <img src={logo} className="header__logo" alt="logo" />
-        <div className="header__title-wrapper">
+        <div className="header__title-wrapper header__title-wrapper--desktop">
           <span className="header__title">Waitmanager</span>
           <span className="header__subtitle">Subsidiary of CVA Tech Ventures</span>
         </div>
@@ -19,6 +19,10 @@ function Header() {
             Contact Us
           </a>
         </div>
+      </div>
+      <div className="header__title-wrapper header__title-wrapper--mobile">
+        <span className="header__title">Waitmanager</span>
+        <span className="header__subtitle">Subsidiary of CVA Tech Ventures</span>
       </div>
     </header>
   );
